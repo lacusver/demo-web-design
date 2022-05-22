@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{ width:100%; height: 100%;}
+
+body{
+    font-family: "Montserrat";
+    --min: 1em; 
+    --val: 4vw;    
+    --max: 1.2em; 
+    overflow-x: hidden;
+}
+section{
+    margin-top: 10rem;
+}
+#mainNavbar{
+    padding: 0;
+}
+
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    font-family: "Montserrat";
+    letter-spacing: 0.2rem;
+    /* background-color: #FFE7B1; */
+    border-radius: 10px;
+    margin-left: 1rem;
+    --min: 0.8em; 
+    --val: 4vw;    
+    --max: 1.0em; 
+    font-weight: 400;
+}
+
+#header{
+    margin: 0;
+}
+.main-image-container{
+    padding: 0;
+    background-color: #F6869A;
+    height: 100vh;
+}
+.main-image{
+    height: 100vh;
+  object-fit: cover;
+    max-width: 100%;
+}
+
+.main-content-container{
+    position: relative;
+    height: 100vh;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, body, .main-title .title, .nav-link, .adress-info {
+    /* Font minimum, preferred and maximum value */
+    font-size: clamp(var(--min), var(--val), var(--max));
+  }
+  
+  h2{
+    --min: 1.5em; 
+    --val: 4vw;    
+    --max: 2em; 
+  }
+
+  h3{
+    --min: 1.2em; 
+    --val: 4vw;    
+    --max: 1.6em; 
+  }
+
+.main-title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-title .title{
+    font-weight: 900;
+    letter-spacing: 1rem;
+    --min: 2.0em; 
+    --val: 4vw;    
+    --max: 4em; 
+    color: #F45555;
+}
+
+.svg-main-image-container{
+    position: absolute;
+    top:100%;
+    left: 100%;
+    transform: translate(-100%,-100%);
+    height: 40vh;
+}
+
+.svg-main-image{
+    
+    height: 40vh;
+    width: auto;
+    /* max-height: 100%; */
+}
+.svg-main-image{
+    height: 40vh;
+    max-height: 100%;
+}
+
+.title-section{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.title-section h2{
+    padding-top: 1rem;
+}
+
+.mini-cake-svg-container{
+    height: 8rem;
+}
+.mini-cake-svg{
+    max-height: 100%;
+}
+
+.popular-carousel-container{
+    /* height: 30rem; */
+    border: #F6869A solid 50px;
+    padding: 2rem 0;
+    
+}
+
+.about-me-container{
+    position: relative;
+    height: 35rem;
+}
+.about-me-svg-container{
+    height: 35rem;
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translate(-100%,-100%);
+}
+
+.about-me-svg{
+    max-height: 100%;
+    width: auto;
+}
+
+.about-me-content-container{
+    padding: 0;
+    padding-right: 5rem;
+}
+
+.about-me-text-container{
+    padding: 3rem;
+    background-color: #FFE7B1;
+}
+
+.about-me-carousel-container{
+    padding: 2rem 5rem;
+    /* height: 50rem; */
+    background-color: #F6869A;
+}
+  
+.cakes-info-container{
+    padding: 0 5rem;
+}
+
+.cakes-title{
+    text-align: center;
+    border: #F6869A solid 10px;
+    border-radius: 50px;
+    padding: 2rem 0;
+}
+
+.cakes-price-container{
+    padding: 2rem 1rem;
+}
+
+.cake-card{
+    padding: 1rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+
+.cake-card-image{
+    overflow:hidden;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    /* margin: 40px 10px; */
+}
+
+.card-img{
+    /* height: auto; */
+    /* width: auto;     */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-circle {
+    border-radius: 50%;
+    /* width: 50%; */
+}
+
+.cake-img-resize-help{
+    padding: 2rem;
+}
+.ratio {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 20rem;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+/* Contact form */
+.contact-form{
+    text-align: center;
+}
+
+.contact-form-content{
+     background-position: center;
+     background-size: cover;
+}
+
+.contact-form-btn{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: #f4555581 solid 2px;
+    /* color:#fff; */
+    background-color:#ffe8b1cc;
+    border-radius: 10px;
+    /* border: none; */
+    padding: 10px 20px;
+}
+
+.contact-container{
+    padding: 0 5rem;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+  .addit-products{
+    margin: 80px 0;
+    /* border: solid 5px #171616; */
+    box-shadow: -5px -5px 10px rgba(255,255, 255, 0.05),
+    5px 5px 15px rgba(0, 0, 0, 0.609);
+    /* background-color: rgba(235, 47, 47, 0.438) !important; */
+    
+}
+
+
+.contact-text{
+    /* margin-left: 5%; */
+    padding: 5%;
+    text-align: center;
+}
+.adress-info{
+    --min: 1.3em;  
+    --val: 2.5vw; 
+    --max: 1.6em; 
+    padding-bottom: 5%;
+}
+.social-icon{
+    margin-left: 10%;
+    text-align: center;
+}
+
+.fa-instagram{
+    margin-left: 0;
+}
+
+.contact-fluid{
+    text-align: center;
+}
+#contacts{
+    padding-bottom: 10%;
+    
+}
+
+#flame1, #flame2, #flame3{
+    animation:  shake 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#FullHeart{
+    animation:  shakeHeart 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#miniCakes{
+    animation:  shakeCake 1s ease-in-out infinite alternate;
+    transform-origin:top;
+}
+
+@keyframes shakeCake {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(22deg);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: skewX(0) scale(1.15);
+    }
+    50% {
+      transform: skewX(6deg) scale(0.8);
+    }
+  }
+
+  @keyframes shakeHeart {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(15deg);
+    }
+  }
+
+  @keyframes glow {
+    0%,
+    100% {
+      background-color: #ef5a00;
+    }
+    50% {
+      background-color: #ff7800;
+    }
+  }
+
+@media only screen and (orientation: portrait) {
+        .svg-main-image-container, .svg-main-image{
+            
+            height: 40vw;
+        }
+    }
+
+@media (max-width: 1199px){
+    .about-me-container{
+        height: 22rem;
+    }
+    .about-me-svg-container{
+        height: 22rem;
+    }
+}
+
+@media (max-width: 991px){
+    .about-me-container{
+        height: 35rem;
+    }
+    .about-me-svg-container{
+        height: 35rem;
+        top: 100%;
+        left: 50%;
+        padding-bottom: 1rem;
+        transform: translate(-50%,-100%);
+    }
+
+    .about-me-text-container{
+        padding: 3rem;
+        
+    }
+    
+    .about-me-carousel-container{
+        padding: 3rem;
+     
+    }
+}
+    
+@media (max-width: 767px){
+    .main-image-container{
+        display:none;
+    }
+    .main-title{
+        text-align: center;
+        /* top: 16rem; */
+    }
+
+    .svg-main-image-container{
+        
+        top:100%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        height: 55vw;
+    }
+    
+    .svg-main-image{
+        height: 55vw;
+        
+    }
+    
+    .cakes-info-container{
+        padding: 0 2rem;
+    }
+
+    .about-me-text-container{
+        padding: 3rem 8rem;
+        
+    }
+    
+    .about-me-carousel-container{
+        padding: 3rem 8rem;
+     
+    }
+
+}
+
+@media (max-width: 600px){
+    .svg-main-image-container, .svg-main-image{
+            
+        height: 65vw;
+    }
+
+    .cakes-info-container{
+        padding: 0;
+    }
+
+    .mini-cake-svg-container{
+        height: 6rem;
+    }
+
+    .about-me-container{
+        height: 30rem;
+    }
+    .about-me-svg-container{
+        height: 30rem;
+    }
+
+    .about-me-text-container{
+        padding: 3rem 5rem;
+        
+    }
+    
+    .about-me-carousel-container{
+        padding: 3rem 5rem;
+     
+    }
+}
+
+@media (max-width: 500px){
+    .contact-container{
+        padding: 0 1rem;
+    }
+
+    .about-me-text-container{
+        padding: 1rem 3rem;
+        
+    }
+    
+    .about-me-carousel-container{
+        padding: 1rem 3rem;
+     
+    }
+}
+
+
+@media (max-width: 400px){
+    .mini-cake-svg-container{
+        height: 4rem;
+    }
+    .about-me-container{
+        height: 25rem;
+    }
+    .about-me-svg-container{
+        height: 25rem;
+    }
+
+    .about-me-text-container{
+        padding: 2rem 1.2rem;
+        
+    }
+    
+    .about-me-carousel-container{
+        padding: 2rem 1rem;
+     
+    }
+
+    #map {
+        height: 300px;
+       
+      }
+}
+
+@media (max-width: 300px){
+    .cakes-price-container{
+        padding: 1rem 0;
+    }
+
+    .cakes-title{
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 1700px){
+    .cake-img-resize-help{
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 1400px){
+    .cake-img-resize-help{
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .multi-car.carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .multi-car.carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 576px) {
+    .multi-car.carousel-inner .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .multi-car.carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .multi-car.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .multi-car.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .multi-car.carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .multi-car .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .multi-car .carousel-item-next.carousel-item-left + .carousel-item,
+    .multi-car .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .multi-car.carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    multi-car .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .multi-car .carousel-item-prev.carousel-item-right + .carousel-item,
+    .multi-car .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .multi-car.carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .multi-car.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .multi-car.carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .multi-car .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .multi-car .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .multi-car.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .multi-car.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .multi-car.carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .multi-car .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .multi-car .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}

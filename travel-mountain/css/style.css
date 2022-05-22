@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{ width:100%; height: 100%;}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    /* padding: 20px; */
+    
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(119.81deg, rgba(76, 187, 185, 0.54) 0.3%, rgba(7, 121, 228, 0.83) 100%),   
+    url('../imgs/vincentiu-solomon-Z4wF0h47fy8-unsplash\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+.navbar.scrolled{
+	background: rgba(76, 187, 185, 0.86);
+	transition: background 500ms;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+.nav-item{
+    font-size: 20px;
+    padding-right: 20px;
+    
+}
+.nav-link{
+color: white !important;
+}
+.title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 2;
+}
+.title-main{
+    display:block;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.625rem;
+    margin-left: 0.625rem;
+}
+.title-sub{
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 0.3125rem;
+    margin-left:0.3125rem ;
+    font-weight: 700;
+}
+.title-btn{
+    margin-top: 3vw;
+    display:inline-block;
+    padding:  2% 10%;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 5px;
+    color: #fff;
+    font-weight: 400;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background:linear-gradient(180deg, #77D8D8 0%, rgba(7, 121, 228, 0.81) 100%);
+}
+.title-btn:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* About section */
+.about{
+    /* height: 100vh; */
+    background: linear-gradient(180deg, #0779E4 0%, #4CBBB9 100%);
+}
+.about-heading{
+    background: rgba(7, 121, 228, 0.86);
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-weight: 400; */
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+.about-content{
+    line-height: 2;
+
+}
+.about-img{
+    object-fit:contain;
+    /* max-height: auto; */
+    max-height: 100%;
+    max-width: 100%;
+}
+.row{
+    margin : 0px;
+}
+
+
+.popup{
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    font-size: 1.3rem;
+    top:0;
+    left:0;
+    background-color: rgba(26, 26, 24, 0.835);
+    /* z-index: 9999; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    
+}
+.popuphidden{
+    height: 100%;
+    width: 100%;
+    background-color: fuchsia;
+}
+.section{
+    margin-top: 2rem;
+}
+.section-heading{
+    letter-spacing: .2rem;
+}
+.popup-content{
+    text-align: center;
+    width: 70%;
+    /* background-color: rgb(22, 22, 22); */
+    position: absolute;
+    background:linear-gradient(180deg, #77D8D8 0%, rgba(7, 121, 228, 0.81) 100%);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 70vh;
+    border-radius: 10px;
+    z-index: 2;
+    
+}
+
+.popup-image{
+    /* padding-bottom: 2rem; */
+    padding: 0;
+}
+
+.popup-form{
+    margin-top: 5rem;
+    padding: 0rem 2rem 5rem;
+}
+
+.popup-close{
+    position: absolute;
+    top:0%;
+    left: 100%;
+    transform: translate(-100%,0%);
+    border:none;
+    padding: 1rem;
+    color:#362b25;
+    background: none;
+}
+
+.card-img{
+    height: 20rem;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    
+}
+.card-img-1{
+    background-image: url('../imgs/vincentiu-solomon-Z4wF0h47fy8-unsplash.jpg');
+}
+
+.custom-col-pop{
+    padding: 0;
+}
+.item{
+    /* background-color: #171616; */
+    border-radius: 1px;
+    /* box-shadow: -2px -2px 5px rgba(255,255, 255, 0.05),
+    5px 5px 15px rgba(0, 0, 0, 0.609); */
+    overflow: hidden;
+}
+.item-image{
+    background-image: url('../imgs/2.jpg');
+    /* height: 15rem; */
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+}
+.item-image-1{
+    background-image: url('../imgs/1.jpg');
+}
+.item-image-2{
+    background-image: url('../imgs/3.jpg');
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  /* outline: black; */
+  /* background-size: 100%, 100%; */
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+}
+
+/* Trips section */
+.trips{
+     background: linear-gradient(180deg, #4CBBB9 0%, #0779E4 100%);
+}
+.trips-heading{
+   background: rgba(76, 187, 185, 0.86);
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-weight: 400; */
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.card-box{
+  height: 30rem;
+   margin:5rem 0;
+}
+.card-main{
+    perspective: 150rem;
+    position: relative;
+    margin:0 20px;
+    height: 30rem;
+}
+.card-side{
+    height: 30rem;
+    transition: all 1s ease;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-side-front{
+     background: linear-gradient(144.74deg, #0779E4 0%, #4CBBB9 100%);
+}
+.test-lala{
+    height: 20rem;
+    background-size: cover;
+    background-position: top;
+    
+}
+
+.trip-img{
+    height: 10rem;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+}
+.trip-img-1{
+    background-image: url('../imgs/group-of-person-walking-in-mountain-1365425.jpg');
+}
+.trip-img-2{
+    background-image: url('../imgs/man-standing-on-a-rock-1271619.jpg');
+}
+.trip-img-3{
+     background-image: url('../imgs/person-standing-on-hill-2819631.jpg');
+}
+.trip-title{
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* z-index: 999; */
+    width: 80%;
+    text-align: center;
+    padding: 10px ;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.trip-title-bg-color-1{
+background: rgba(119, 216, 216, 0.75);
+}
+.trip-title-bg-color-2{
+    background: rgba(7, 121, 228, 0.75);
+}
+.trip-title-bg-color-3{
+    background: rgba(76, 187, 185, 0.77);
+}
+.card-content{
+    margin: 0;
+    padding: 12% 3% 2%;
+    position: relative;
+    height: 17rem;
+    text-align: center;
+}
+.trip-btn{
+    border: none;
+    background: linear-gradient(180deg, #4CBBB9 19.27%, #0779E4 92.71%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 20px;
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.card-side-back{
+     background: linear-gradient(144.74deg, #0779E4 0%, #4CBBB9 100%);
+    transform:rotateY(-180deg);
+    text-align: center;
+}
+.card-back-content{
+    padding: 5rem 2rem 0;
+    height: 30rem;
+    
+}
+.price{
+   
+    width: 50%;
+    margin-top: 10%;
+    /* padding: 2rem; */
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 5px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.price-bg-1{
+     background: rgba(119, 216, 216, 0.75);
+}
+.price-bg-2{
+    background: rgba(7, 121, 228, 0.75);
+}
+price-bg-3{
+    background: rgba(86, 211, 209, 0.77);
+
+}
+.card-back-btn{
+     border: none;
+    background: linear-gradient(180deg, #4CBBB9 19.27%, #0779E4 92.71%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 20px;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.card-main:hover .card-side-front{
+    transform: rotateY(180deg);
+}
+.card-main:hover .card-side-back{
+    transform: rotateY(0);
+}
+
+/* Contact form */
+.contact-form{
+    text-align: center;
+   
+}
+.contact-form-heading{
+    background: rgba(7, 121, 228, 0.86);
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-weight: 400; */
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+.contact-form-sub-heading{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px;
+}
+.contact-form-content{
+    /* height: 80vh; */
+    padding: 2rem;
+     background-image: linear-gradient(119.81deg,  rgba(7, 121, 228, 0.83) 0.3%, rgba(76, 187, 185, 0.54) 100%),url('../imgs/adventure-cold-daylight-fog-291732.jpg');
+     background-position: center;
+     background-size: cover;
+    /* background: linear-gradient(180deg, #0779E4 0%, #4CBBB9 100%); */
+}
+.contact-form-input{
+    /* padding:100px 0; */
+}
+.contact-form-btn{
+    background: linear-gradient(180deg, #4CBBB9 19.27%, #0779E4 92.71%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}
+/* footer */
+.custom-footer{
+    background: rgba(76, 187, 185, 0.86);
+    text-align: center;
+}
+.social-icon{
+    margin: 20px;
+}
+
+@media(orientation:landscape){
+    .title{
+        line-height: 1.7;
+    }
+}

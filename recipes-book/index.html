@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav id="mainNavbar" class="navbar navbar-custom  navbar-expand-lg ">
+            <a class="navbar-brand" href="">recipes</a>
+            <button class="navbar-light custom-toggler navbar-toggler" onclick="addBG()" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#about">Обо мне </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#recipes">Рецепты</a>
+                    </li>
+                    <li class="nav-item nav-item-special-end">
+                        <a class="nav-link scroll" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="title">
+            <span class="title-main">Книга</span>
+            <span class="title-main title-main-2">рецептов</span>
+
+        </div>
+
+
+        <div class="girl-img">
+            <!-- <img src="imgs/girl_chef (2).svg" alt=""> -->
+        </div>
+
+        <div class="veggi-beans">
+
+        </div>
+
+
+
+    </header>
+
+    <div class="space-between">
+        <hr>
+    </div>
+
+    <div class="about" id="about">
+        <h2 class="recipe-heading">Привет</h2>
+        <div class="row about-row ">
+            <div class="col-sm-3 avatar">
+                <!-- <div class="girl-text">
+                    <h2>Привет!</h2>
+                </div> -->
+                <div class="girl-waving">
+
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rem, adipisci
+                    nulla ipsam at cum sapiente nobis suscipit vel laboriosam ea aspernatur laudantium repudiandae
+                    consequatur sint nemo! Recusandae blanditiis cum quasi alias officiis, accusantium reprehenderit sit
+                    dolorum illo fugiat odit laudantium? Vitae veritatis maiores molestiae odio?
+                    Dolore nisi officiis deleniti.
+                </div>
+            </div>
+
+
+        </div>
+        <div class="carrot">
+
+        </div>
+
+
+    </div>
+
+    <div class="space-between">
+        <hr>
+    </div>
+
+    <div class="recipe-dish" id="recipes">
+        <h2 class="recipe-heading">Горячие блюда</h2>
+        <div class="dishes">
+            <div class="row justify-content-center">
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dish-img-1">
+                                <div class="img-title">Лазанья</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dish-img-2">
+                                <div class="img-title">Грибной суп</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dish-img-3">
+                                <div class="img-title">Курица на сковороде</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dish-img-4">
+                                <div class="img-title">Паста болоньезе</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dish-img-5">
+                                <div class="img-title">Гороховый суп</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dish-img-6">
+                                <div class="img-title">Пицца с грибами</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="space-between">
+        <hr>
+    </div>
+
+    <div class="recipe-dessert">
+        <h2 class="recipe-heading">Десерты</h2>
+        <div class="desserts">
+            <div class="row">
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dessert-img-1">
+                                <div class="img-title">Чизкейк</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dessert-img-2">
+                                <div class="img-title">Панкейки</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dessert-img-3">
+                                <div class="img-title">Шоколадный торт</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dessert-img-4">
+                                <div class="img-title">Брауни</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dessert-img-5">
+                                <div class="img-title">Тирамису</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col col-sm-6 col-md-4">
+                    <a class="view-recipe">
+                        <div class="dish-item">
+                            <div class="dish-img dessert-img-6">
+                                <div class="img-title">Капкейк</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space-between">
+
+    </div>
+
+
+    <div class="popup" id="popup1">
+        <!-- <div class="invisible"> -->
+        <div class="popup-content">
+
+            <div class="popup-info">
+
+                <div class="row ">
+                    <div class="custom-col-pop col-md-5 ">
+                        <div class="dish-img dish-img-1">
+                            <div class="img-title">Лазанья</div>
+                        </div>
+                    </div>
+                    <div class="custom-col-pop">
+                        <div class="ingredient">
+
+                            <h2 class="section-heading">Ингредиенты</h2>
+                            <ul>
+                                <li><i class="far fa-circle ingr-circle"></i> Листы для лазаньи - 250 г</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Фарш мясной (говяжий) - 450 г</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Лук репчатый - 1 шт.
+                                </li>
+                                <li><i class="far fa-circle ingr-circle"></i> Морковь - 1 шт.</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Томатный соус - 60 г</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Томатная паста - 60 г</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Масло сливочное - 60 + 30 г</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Мука - 60 г</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Молоко - 800 мл</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Сыр пармезан - 120 г</li>
+                                <li><i class="far fa-circle ingr-circle"></i> Мускатный орех - 1 ч. л.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="recipe-detail">
+                    <div class="section">
+                        <h3 class="section-heading">Готовим соус бешамель</h3>
+                        <div class="section-content">В глубокой сковороде растопить сливочное масло (60 г), добавить
+                            муку и, интенсивно помешивая, влить частями горячее
+                            молоко. Приправить солью и мускатным орехом, довести до кипения, постоянно помешивая,
+                            снять
+                            с огня.
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h3 class="section-heading">Готовим соус болоньезе</h3>
+                        <div class="section-content">Репчатый лук мелко режем, морковь натираем на терке. В глубокой
+                            сковороде обжариваем лук на сливочном масле до полуготовности. Добавляем к нему морковь,
+                            жарим около 5 минут. Затем добавляем фарш, посыпаем солью и перцем, хорошо перемешиваем.
+                            Жарим на слабом огне еще около 10 минут. Далее добавляем томатный соус и томатную пасту.
+                            Перемешиваем и готовим еще 10 минут.
+                        </div>
+
+                    </div>
+                    <div class="section">
+                        <h3 class="section-heading">Выкладываем слои лазаньи</h3>
+                        <div class="section-content">На дно формы выкладываем часть соуса бешамель. Укладываем на
+                            него
+                            лист лазаньи. Затем выкладываем часть соуса болоньезе.
+                            Поверх заливаем частью соуса бешамель и посыпаем тертым пармезаном. Повторяем слои
+                            лазаньи
+                            до тех пор, пока все ингредиенты не будут использованы. Верхний слой листа лазаньи
+                            поливаем
+                            соусом бешамель и посыпаем пармезаном.
+                            Запекаем лазанью в духовке около 40 минут при 180-190 градусах до образования золотистой
+                            корочки.
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h3 class="section-heading">Последний этап</h3>
+                        <div class="section-content">Готовую лазанью вынимаем из духовки, даем постоять минут 10, а
+                            затем нарезаем на порции.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="closeForm()" class="popup-close"><i class="fas fa-times fa-2x"></i></button>
+        </div>
+        <!-- </div> -->
+
+    </div>
+    <footer class="custom-footer" id="contacts">
+        <div class="container-fluid">
+            <i class="social-icon fab fa-instagram fa-2x"></i>
+            <i class=" social-icon fab fa-telegram fa-2x"></i>
+            <i class="social-icon fab fa-vk fa-2x"></i>
+            <i class="social-icon fas fa-envelope fa-2x"></i>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
